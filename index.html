@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GoogleSheets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="props"> 
+           <div id="cell-display"></div>
+           <div id="bold" class="" onclick="onClickBold(this)">B</div>
+            <div id="italic">I</div>
+            <div id="underline">U</div>
+
+           <div class="AlignItems" onclick="onclickTextAlign(this)"   data-value="left">
+             <i class="fa-solid fa-align-left"  ></i>
+           </div>          
+           <div class="AlignItems" onclick="onclickTextAlign(this)"  data-value="right">
+             <i class="fa-solid fa-align-right"  ></i>
+           </div> 
+           <div class="AlignItems" onclick="onclickTextAlign(this)" data-value="center">
+             <i class="fa-solid fa-align-center"   ></i>
+           </div>
+
+
+            <div class="text-color" >
+                 <label for="color-picker"><i class="fa-solid fa-palette"></i><label>
+               <input onclick="onClickColor(this)" type="color" id="color-picker">
+            </div>
+
+
+            <div id="bg-color">
+                <label for="color-picker"><i class="fa-solid fa-fill-drip"></i><label>
+                    <input type="color" id="color-picker">
+            </div>
+        </div>
+
+    <div class="main">
+   <div id="head">
+        <b >S.No</b>
+   
+   </div>
+   <section id="body">
+        
+   </section>
+</div>
+<script src="options.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

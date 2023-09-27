@@ -1,0 +1,82 @@
+.main{
+    width: fit-content;
+}
+
+.active-options{
+    background-color: grey;
+}
+.props{
+    display: flex;
+    gap:20px;
+    background-color: #ecf0f1;
+
+}
+.props div,.props i {
+    cursor: pointer;
+}
+.props div:hover,.props i:hover {
+    background-color: rgb(201, 201, 201);
+}
+#bold,#italic,#underline{
+    
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    padding: 2px 2px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.text-color ,.bg-color{
+    cursor: pointer;
+}
+#color-picker{
+   display: none;
+}
+#head{
+    display: flex;
+    overflow-y: auto;
+}
+.row{
+    display: flex; 
+
+}
+.row div,.row b{
+    min-width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#head{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#head b {
+
+    padding: 10px 0;
+    min-width: 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.row b {
+    background-color: blue;
+    position:sticky;
+    left: 0;
+}
+.row div{
+max-width: 100px;
+    overflow: auto;
+}
+
+
+#cell-display{
+    width: 100px;
+    height: 30px;
+    border: 1px solid red;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
